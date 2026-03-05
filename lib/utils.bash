@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-GH_REPO="https://github.com/zricethezav/gitleaks"
+GH_REPO="https://github.com/gitleaks/gitleaks"
 TOOL_NAME="gitleaks"
 TOOL_TEST="gitleaks --help"
 
@@ -63,7 +63,7 @@ download_release() {
     ;;
   esac
 
-  # https://github.com/zricethezav/gitleaks/releases/download/v8.13.0/gitleaks_8.13.0_linux_x64.tar.gz
+  # https://github.com/gitleaks/gitleaks/releases/download/v8.13.0/gitleaks_8.13.0_linux_x64.tar.gz
   url="$GH_REPO/releases/download/v${version}/gitleaks_${version}_${os}_${arch}.tar.gz"
 
   echo "* Downloading $TOOL_NAME release $version..."
